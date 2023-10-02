@@ -22,7 +22,7 @@ const Home = () => {
     {
       textPosition: "text-center",
       category: "",
-      title: "Bulgarian Society Groningen",
+      title: "Bulgarian Society Rotterdam",
       description: "",
       buttonText: user.token ? "Go To Profile" : "Become a Member",
       style: user.token ? " rn-btn-reverse-green" : " btn-primary-color",
@@ -37,8 +37,8 @@ const Home = () => {
       {/* Start Slider Area   */}
       <div className="slider-activation slider-creative-agency">
         <ImageFb
-          src="/assets/images/bg/paralax/groningen.webp"
-          fallback="/assets/images/bg/paralax/groningen.jpg"
+          src="/assets/images/bg/paralax/rotterdam.webp"
+          fallback="/assets/images/bg/paralax/rotterdam.jpg"
           className="home_bg"
         />
         {SlideList.map((value, index) => (

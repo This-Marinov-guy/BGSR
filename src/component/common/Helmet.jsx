@@ -6,7 +6,7 @@ class PageHelmet extends Component {
     return (
       <React.Fragment>
         <Helmet>
-          <title>BGSG || {this.props.pageTitle} </title>
+          <title>BGSR || {this.props.pageTitle} </title>
         </Helmet>
       </React.Fragment>
     );
