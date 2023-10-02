@@ -24,7 +24,7 @@ const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/information/About"));
 const Contact = lazy(() => import("./pages/information/Contact"));
 const Policy = lazy(() => import("./pages/information/Policy"));
-const Error404 = lazy(() => import("./pages/Error404"));
+const Error404 = lazy(() => import("./pages/error404"));
 const Board = lazy(() => import("./pages/information/Board"));
 const Contest = lazy(() => import("./pages/information/Contest"));
 const Committees = lazy(() => import("./pages/information/Committees"));
