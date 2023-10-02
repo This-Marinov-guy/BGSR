@@ -138,7 +138,8 @@ class Team extends Component {
       <React.Fragment>
         <div className="container team_info">
           <div className="column">
-            {TeamContent.map((value) => (
+          <h2>Expect soon...</h2>
+            {/* {TeamContent.map((value) => (
               <div
                 className={
                   value.id % 2 !== 0
@@ -180,7 +181,7 @@ class Team extends Component {
                   ))}
                 </div>
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
       </React.Fragment>

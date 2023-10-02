@@ -91,8 +91,7 @@ const Home = () => {
       {/* End About Area  */}
       {/* <Greeting /> */}
       {/* Start News Area */}
-      <div className="container mt--80 mb--80">
-
+      <div className="container mt--60 mb--80">
         <h2 className="title">News</h2>
         <ul>
           <li className="mt--40">
