@@ -1,7 +1,7 @@
 {
-  "name": "bgsg",
+  "name": "bgsr",
   "version": "2.0.27",
-  "homepage": "https://bulgariansocietygro.nl",
+  "homepage": "https://bulgariansocietyrot.nl",
   "private": true,
   "basename": "/",
   "dependencies": {
@@ -102,7 +102,7 @@
     "start": "node scripts/start.js",
     "build": "npm version patch && node scripts/build.js",
     "test": "node scripts/test.js",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && netlify deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
