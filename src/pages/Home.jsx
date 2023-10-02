@@ -87,7 +87,7 @@ const Home = () => {
       {/* End Sponsor Area */}
 
       {/* Start About Area  */}
-      <AboutUs />
+      {/* <AboutUs /> */}
       {/* End About Area  */}
       {/* <Greeting /> */}
       {/* Start News Area */}

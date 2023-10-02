@@ -85,12 +85,12 @@ const Header = (props) => {
                     <li>
                       <Link to="/board">Meet the Board</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link to="/committees">Meet the Committees</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </li>
-                <li className="has-droupdown">
+                {/* <li className="has-droupdown">
                   <Link to="/events">Events</Link>
                   <ul className="submenu">
                     <li>
@@ -108,7 +108,7 @@ const Header = (props) => {
                       <Link to="/articles">Articles</Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
 
                 <li>
                   <Link to="/contact">Contact</Link>
