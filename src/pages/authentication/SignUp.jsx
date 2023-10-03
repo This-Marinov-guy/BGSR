@@ -182,6 +182,7 @@ const SignUp = (props) => {
               formData.append("itemId", "price_1Nx3UzIOw5UGbAo1AEqZ0P02");
               formData.append("origin_url", window.location.origin);
               formData.append("method", "signup");
+              formData.append("region", 'Rotterdam');
               formData.append("name", values.name);
               formData.append("surname", values.surname);
               formData.append("birth", values.birth);
