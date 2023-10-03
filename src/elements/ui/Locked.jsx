@@ -23,7 +23,7 @@ const Locked = (props) => {
         "payment/checkout-no-file",
         "POST",
         JSON.stringify({
-          itemId: "price_1N0LQAIOw5UGbAo1rbWOq5m1",
+          itemId: "price_1Nx3TVIOw5UGbAo1Rc0N4qi8",
           origin_url: window.location.origin,
           method: "unlock_account",
           userId,
