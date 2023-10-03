@@ -76,6 +76,9 @@ const Header = (props) => {
           <div className="header-right">
             <nav className="mainmenunav d-lg-block">
               <ul className={props.dark ? "mainmenu dark_nav" : "mainmenu"}>
+                <li>
+                  <a href='https://bulgariansocietygro.nl/' target='_blank'><img src='/assets/images/logo/bgsg.jpg' className="small-logo" alt='BGSG'/></a>
+                </li>
                 <li className="has-droupdown">
                   <Link to="/about">About</Link>
                   <ul className="submenu">
