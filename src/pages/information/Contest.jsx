@@ -19,7 +19,7 @@ const Policy = React.memo(() => {
                     Terms and conditions:
                 </h2>
                 <h2 className="center_text">
-                    Short promo video contest organised by Bulgarian Society Groningen      </h2>
+                    Short promo video contest organised by Bulgarian Society Rotterdam      </h2>
             </div>
             <div className="container mt--80 mb--80">
                 <h3>1. Who can enter?
@@ -85,13 +85,13 @@ const Policy = React.memo(() => {
 
                 </h3>
                 <p className="mt--10 mb--50">
-                    The winner will receive a contribution of 50€ from Bulgarian Society Groningen
+                    The winner will receive a contribution of 50€ from Bulgarian Society Rotterdam
                 </p>
                 <h3>8. Who holds the rights to the video?
 
                 </h3>
                 <p className="mt--10 mb--50">
-                    Bulgarian Society Groningen reserves the right to use the submitted videos for the purpose of promoting the
+                    Bulgarian Society Rotterdam reserves the right to use the submitted videos for the purpose of promoting the
                     organization.
                 </p>
                 <h3>9. Any other questions?

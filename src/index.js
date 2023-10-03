@@ -120,29 +120,29 @@ const Root = () => {
             <Route exact path={`/about`} component={About} />
             <Route exact path={`/rules-and-regulations`} component={Policy} />
             <Route exact path={`/board`} component={Board} />
-            <Route exact path={`/contest/promo-video`} component={Contest} />
+            {/* <Route exact path={`/contest/promo-video`} component={Contest} /> */}
             {/* <Route exact path={`/contest/register`}>
               <ContestRegister setNotification={setNotification} />
             </Route> */}
             <Route exact path={`/committees`} component={Committees} />
-            <Route exact path={`/events`} component={Events} />
-            <Route exact path={`/articles`} component={Articles} />
+            {/* <Route exact path={`/events`} component={Events} /> */}
+            {/* <Route exact path={`/articles`} component={Articles} /> */}
             {/* <Route exact path={`/active-member`} >
               <ActiveMember setNotification={setNotification} />
             </Route> */}
 
-            <Route exact path={`/future-events`} component={FutureEvents} />
+            {/* <Route exact path={`/future-events`} component={FutureEvents} />
 
-            <Route exact path={`/past-events`} component={PastEvents} />
-            <Route path={`/event-details/:eventId`} component={EventDetails} />
+            <Route exact path={`/past-events`} component={PastEvents} /> */}
+            {/* <Route path={`/event-details/:eventId`} component={EventDetails} /> */}
 
-            <Route exact path={"/other-event-details/:eventId"}>
+            {/* <Route exact path={"/other-event-details/:eventId"}>
               <NonSocietyEvent setNotification={setNotification} />
             </Route>
             <Route
               path={`/event-reflection/:eventId`}
               component={EventReflection}
-            />
+            /> */}
 
             {/* Redirect pages */}
 
@@ -170,11 +170,11 @@ const Root = () => {
                 <Route exact path={`/signup`}>
                   <SignUp setNotification={setNotification} />
                 </Route>
-                <Route
+                {/* <Route
                   exact
                   path={"/purchase-ticket/:eventId"}
                   component={NonMemberPurchase}
-                />
+                /> */}
                 <Route path="*" component={Error404} />
               </Switch>
             )}
