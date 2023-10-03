@@ -45,7 +45,7 @@ const About = React.memo(() => {
         <div className="container">
           <p className="mb--20">
             <FiCheckCircle />
-            &nbsp;&nbsp; We are Bulgarian Society Groningen.
+            &nbsp;&nbsp; We are Bulgarian Society Rotterdam.
           </p>
           <p className="mb--20">
             <FiCheckCircle />
@@ -55,17 +55,17 @@ const About = React.memo(() => {
           <p className="mb--20">
             <FiCheckCircle />
             &nbsp;&nbsp; We saw the need to create an environment that will
-            stimulate the Bulgarians in Groningen to develop and reach their
+            stimulate the Bulgarians in Rotterdam to develop and reach their
             goals and to become the best version of themselves.
           </p>
           <p className="mb--20">
             <FiCheckCircle />
-            &nbsp;&nbsp; We saw the need in Groningen to celebrate and develop
+            &nbsp;&nbsp; We saw the need in Rotterdam to celebrate and develop
             Bulgarian culture and to showcase it among internationals.
           </p>
 
           <h2 className="center_text mt--40">
-            This is why we created Bulgarian Society Groningen!
+            This is why we created Bulgarian Society Rotterdam!
           </h2>
 
         </div>
