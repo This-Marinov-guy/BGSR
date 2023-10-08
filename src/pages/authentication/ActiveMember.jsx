@@ -160,20 +160,21 @@ const ActiveMember = (props) => {
                             formData.append("phone", values.phone)
                             formData.append("cv", values.cv);
                             // formData.append("letter", values.letter);
-                            formData.append('questions',
-                                [
-                                    values.q1,
-                                    values.q2,
-                                    values.q3,
-                                    values.q4,
-                                    values.q5,
-                                    values.q6,
-                                    values.q7,
-                                    values.q8,
-                                    values.q9,
-                                    values.q10,
-                                ]
-                            )
+                            questions = [
+                                values.q1,
+                                values.q2,
+                                values.q3,
+                                values.q4,
+                                values.q5,
+                                values.q6,
+                                values.q7,
+                                values.q8,
+                                values.q9,
+                                values.q10,
+                            ]
+                            questions.forEach((value, index) => {
+                                formData.append(`questions[${index}]`, value);
+                            });
                             try {
                                 const responseData = await sendRequest(
                                     "user/active-member",
@@ -401,7 +402,7 @@ const ActiveMember = (props) => {
                                 </div>
                                 <div className="row ">
                                     <div className="col-lg-6 col-md-12 col-12 mt--40">
-                                        <h4>9. Имате ли опит със content creation, social media, canva/photoshop? </h4>
+                                        <h4>9. Имате ли опит със content creation, social media , canva/photoshop? </h4>
                                         <Field as='textarea' placeholder="Въпрос 9" name="q9" />
                                         <ErrorMessage
                                             className="error"
