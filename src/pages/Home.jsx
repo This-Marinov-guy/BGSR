@@ -95,7 +95,7 @@ const Home = () => {
         <h2 className="title">News</h2>
         <ul>
           <li className="mt--40">
-            <p> Become a part of the society  <a href='/active-member'>
+            <p> Become part of the society.  <a href='/active-member'>
               Sign up now!
             </a>
             </p>

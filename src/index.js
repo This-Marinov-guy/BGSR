@@ -163,13 +163,13 @@ const Root = () => {
               </Switch>
             ) : (
               <Switch>
-                <Route exact path={`/login`}>
+                {/* <Route exact path={`/login`}>
                   <LogIn setNotification={setNotification} />
                 </Route>
 
                 <Route exact path={`/signup`}>
                   <SignUp setNotification={setNotification} />
-                </Route>
+                </Route> */}
                 {/* <Route
                   exact
                   path={"/purchase-ticket/:eventId"}
