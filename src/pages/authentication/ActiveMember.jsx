@@ -401,7 +401,7 @@ const ActiveMember = (props) => {
                                 </div>
                                 <div className="row ">
                                     <div className="col-lg-6 col-md-12 col-12 mt--40">
-                                        <h4>9. Имате ли опит със създаване на съдържание за социалните мрежи, canva/photoshop? </h4>
+                                        <h4>9. Имате ли опит със content creation, social media, canva/photoshop? </h4>
                                         <Field as='textarea' placeholder="Въпрос 9" name="q9" />
                                         <ErrorMessage
                                             className="error"
