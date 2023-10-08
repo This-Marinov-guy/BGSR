@@ -13,15 +13,15 @@ import { FiMail } from "react-icons/fi";
 import { FaInstagram, FaFlickr, FaLink, FaFacebookF } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaInstagram />, link: "https://flickr.com/photos/197725983@N03" },
-  {
-    Social: <FaFacebookF />,
-    link: "https://www.facebook.com/profile.php?id=100090061861023",
-  },
-  {
-    Social: <FaFlickr />,
-    link: "https://flickr.com/photos/197725983@N03/albums",
-  },
+  { Social: <FaInstagram />, link: "https://www.instagram.com/bulgariansociety.rtm/" },
+  // {
+  //   Social: <FaFacebookF />,
+  //   link: "https://www.facebook.com/profile.php?id=100090061861023",
+  // },
+  // {
+  //   Social: <FaFlickr />,
+  //   link: "https://flickr.com/photos/197725983@N03/albums",
+  // },
 ];
 
 const Contact = () => {
