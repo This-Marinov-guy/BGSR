@@ -23,11 +23,11 @@ const Policy = React.memo(() => {
         <h3>Article 1. Structure of the organization and the roles within
         </h3>
         <p className="mt--40 ml--10">
-          1. The Bulgarian Society Rotterdam (BGSG) provides a form for member registration. Completion of the registration form will provide the individual with a WhatsApp payment request including the yearly membership fee of €5. Once the payment has been received, the new member will then be added to the two WhatsApp groups: one for discussion of events, and one for communication between members of the association. Once individuals have gained membership, they will have the ability to join internal events and receive discounts from sponsors, receive discounts for open events, and attend all organised events.
+          1. The Bulgarian Society Rotterdam (BGSR) provides a form for member registration. Completion of the registration form will provide the individual with a WhatsApp payment request including the yearly membership fee of €5. Once the payment has been received, the new member will then be added to the two WhatsApp groups: one for discussion of events, and one for communication between members of the association. Once individuals have gained membership, they will have the ability to join internal events and receive discounts from sponsors, receive discounts for open events, and attend all organised events.
 
         </p>
         <p className="mt--40 ml--10">
-          2. The BGSG is structurally made up of the Board and the various committees. The Board is responsible for the execution of all tasks and events and formulates a plan of action for the upcoming academic year. The Board is fully informed about and has access to all activities that take place within the organisation. These must be clearly defined at all times.
+          2. The  is structurally made up of the Board and the various committees. The Board is responsible for the execution of all tasks and events and formulates a plan of action for the upcoming academic year. The Board is fully informed about and has access to all activities that take place within the organisation. These must be clearly defined at all times.
 
 
         </p>

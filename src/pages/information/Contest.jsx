@@ -42,13 +42,13 @@ const Policy = React.memo(() => {
                     </li>
                     <li>Format 9:16 (instagram reel)
                     </li>
-                    <li>Contains photos and video materials provided by BGSG for the purpose (sent to you via email after
+                    <li>Contains photos and video materials provided by BGSR for the purpose (sent to you via email after
                         registration for the contest)
                     </li>
-                    <li>Shows the achievements of BGSG
+                    <li>Shows the achievements of BGSR
 
                     </li>
-                    <li className="mb--50">Uses the logo of BGSG</li>
+                    <li className="mb--50">Uses the logo of BGSR</li>
 
 
                 </ul>
@@ -64,7 +64,7 @@ const Policy = React.memo(() => {
 
                 </h3>
                 <p className="mt--10 mb--50">
-                Submit the videos via WeTransfer or Google Drive to our email address: Bulgariansociety.gro@gmail.com
+                Submit the videos via WeTransfer or Google Drive to our email address: bulgariansociety.rtm@gmail.com
 
                 </p>
                 <h3 >5. What is the deadline?
@@ -98,7 +98,7 @@ const Policy = React.memo(() => {
 
                 </h3>
                 <p className="mt--10 mb--50">
-                    Please contact us via email (bulgariansociety.gro@gmail.com) or through instagram (bulgariansociety.gro)
+                    Please contact us via email (bulgariansociety.rtm@gmail.com) or through instagram (bulgariansociety.gro)
 
                 </p>
 

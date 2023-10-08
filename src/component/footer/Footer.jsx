@@ -76,8 +76,8 @@ const Footer = () => {
                       <h4>Find us</h4>
                       <ul className="ft-link">
                         <li>
-                          <a href="mailto:bulgariansociety.gro@gmail.com">
-                            bulgariansociety.gro@gmail.com
+                          <a href="mailto:bulgariansociety.rtm@gmail.com">
+                            bulgariansociety.rtm@gmail.com
                           </a>
                         </li>
                       </ul>

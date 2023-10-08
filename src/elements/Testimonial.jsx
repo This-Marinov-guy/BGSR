@@ -73,7 +73,7 @@ class Testimonial extends Component{
                             <TabPanel>
                                 <div className="rn-testimonial-content text-center">
                                     <div className="inner">
-                                        <p>BGSG turned my social life around</p>
+                                        <p> turned my social life around</p>
                                     </div>
                                     <div className="author-info">
                                         <h6><span>Victor, 25 </span>- BSc Business Management</h6>

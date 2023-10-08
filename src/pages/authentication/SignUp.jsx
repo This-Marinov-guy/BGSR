@@ -566,7 +566,7 @@ const SignUp = (props) => {
                         name="notificationTerms"
                       ></Field>
                       <p className="information">
-                        I consent to being notified by BGSG about events and
+                        I consent to being notified by  about events and
                         discounts from us and our sponsors
                       </p>
                     </div>

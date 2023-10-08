@@ -54,9 +54,9 @@ const Contact = () => {
                   <p>
                     <a
                       style={{ overflowWrap: "break-word" }}
-                      href="mailto:bulgariansociety.gro@gmail.com"
+                      href="mailto:bulgariansociety.rtm@gmail.com"
                     >
-                      bulgariansociety.gro@gmail.com
+                      bulgariansociety.rtm@gmail.com
                     </a>
                   </p>
                 </div>
