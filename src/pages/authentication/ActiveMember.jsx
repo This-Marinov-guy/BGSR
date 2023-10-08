@@ -160,7 +160,7 @@ const ActiveMember = (props) => {
                             formData.append("phone", values.phone)
                             formData.append("cv", values.cv);
                             // formData.append("letter", values.letter);
-                            questions = [
+                            const questions = [
                                 values.q1,
                                 values.q2,
                                 values.q3,
