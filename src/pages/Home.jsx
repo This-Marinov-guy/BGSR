@@ -24,9 +24,9 @@ const Home = () => {
       category: "",
       title: "Bulgarian Society Rotterdam",
       description: "",
-      buttonText: user.token ? "Go To Profile" : "Become a Member",
+      buttonText: user.token ? "Go To Profile" : "Become an Active Member",
       style: user.token ? " rn-btn-reverse-green" : " btn-primary-color",
-      buttonLink: user.token ? `/user/${user.userId}` : "/signup",
+      buttonLink: user.token ? `/user/${user.userId}` : "/active-member",
     },
   ];
 
@@ -95,11 +95,17 @@ const Home = () => {
         <h2 className="title">News</h2>
         <ul>
           <li className="mt--40">
+            <p> Become a part of the society  <a href='/active-member'>
+              Sign up now!
+            </a>
+            </p>
+          </li>
+          {/* <li className="mt--40">
             <p> Membership 2023-2024 open. <a href='/signup'>
               Sign up!
             </a>
             </p>
-          </li>
+          </li> */}
         </ul>
 
       </div>

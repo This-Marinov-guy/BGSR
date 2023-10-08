@@ -116,13 +116,16 @@ const Header = (props) => {
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
+                <li>
+                  <Link to="/active-member">Active Member</Link>
+                </li>
                 {user.token && (
                   <li>
                     <Link to={`/user/${user.userId}`}>Profile</Link>
                   </li>
                 )}
 
-                <li>
+                {/* <li>
                   <div className="header-btn">
                     {!user.token ? (
                       <a href="/login" className="rn-btn">
@@ -137,7 +140,7 @@ const Header = (props) => {
                       </button>
                     )}
                   </div>
-                </li>
+                </li> */}
               </ul>
             </nav>
 

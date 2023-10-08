@@ -152,13 +152,17 @@ const SignUp = (props) => {
               </div>
             ))}
           </div>
+          <div style={{textAlign:'center', marginTop: '50px'}}>
+            <h2>Cooming soon!</h2>
+          </div>
         </div>
       </div>
 
       {/* End Options Area */}
       {/* Start Form Area */}
 
-      <div className="blog-comment-form pb--120 bg_color--1">
+
+      {/* <div className="blog-comment-form pb--120 bg_color--1">
         <div className="container">
           <Formik
             className="inner"
@@ -636,7 +640,7 @@ const SignUp = (props) => {
             )}
           </Formik>
         </div>
-      </div>
+      </div> */}
       {/* End Form Area */}
       {/* Start Footer Style  */}
       <FooterTwo />
