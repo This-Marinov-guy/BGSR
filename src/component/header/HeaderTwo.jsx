@@ -75,8 +75,8 @@ const HeaderTwo = () => {
           <div className="header-right header-red">
             <nav className="mainmenunav d-lg-block">
               <ul className="mainmenu">
-                <li>
-                  <a href='https://bulgariansocietygro.nl/' target='_blank'><img src='/assets/images/logo/.jpg' className="small-logo" alt='' /></a>
+              <li>
+                  <a href='https://bulgariansocietygro.nl/' target='_blank'><img src='/assets/images/logo/bgsg.jpg' className="small-logo" alt='BGSG'/></a>
                 </li>
                 <li className="has-droupdown">
                   <Link to="/about">About</Link>

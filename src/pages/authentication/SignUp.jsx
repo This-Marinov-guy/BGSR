@@ -133,21 +133,20 @@ const SignUp = (props) => {
                         className="list-style--1"
                       >
                         <li>
-                          <FiCheck /> Exclusive member events
+                          <FiCheck />Exclusive member events
                         </li>
                         <li>
-                          <FiCheck />
-                          Discounts for events
+                          <FiCheck />Discounts for events
                         </li>
                         <li>
-                          <FiCheck /> Premium Oss collection of event tickets
+                          <FiCheck />Premium Oss collection of event tickets
                         </li>
                         <li>
-                          <FiCheck /> Discounts from sponsors
+                          <FiCheck />Discounts from sponsors
                         </li>
                       </ul>
                     </div>
-                    <p style={{ fontSize: '15px' }}>*The expire date of your membership is the upcoming 31st of August no matter when it is bought</p>
+                    <p style={{ fontSize: '15px' }}>*The annual membership expires on 31st of August</p>
                   </div>
                 </button>
               </div>
@@ -397,8 +396,9 @@ const SignUp = (props) => {
                       <option value="" disabled>
                         Select your university
                       </option>
-                      <option value="RUG">RUG</option>
-                      <option value="Hanze">Hanze</option>
+                      <option value="Erasmus University Rotterdam">Erasmus University Rotterdam</option>
+                      <option value="Rotterdam University of Applied Sciences">Rotterdam University of Applied Sciences</option>
+                      <option value="Codarts University of the Arts">Codarts University of the Arts</option>
                       <option value="other">Other univerisity</option>
                       <option value="working">Working</option>
                     </Field>

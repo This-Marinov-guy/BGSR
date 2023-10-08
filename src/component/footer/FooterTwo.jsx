@@ -9,16 +9,16 @@ import { selectDonation, showDonation } from "../../redux/donation";
 const SocialShare = [
   {
     Social: <FaInstagram />,
-    link: "https://www.instagram.com/bulgariansociety.gro/?igshid=YmMyMTA2M2Y%3D",
+    link: "https://www.instagram.com/bulgariansociety.rtm/",
   },
-  {
-    Social: <FaFacebookF />,
-    link: "https://www.facebook.com/profile.php?id=100090061861023",
-  },
-  {
-    Social: <FaFlickr />,
-    link: "https://flickr.com/photos/197725983@N03/albums",
-  },
+  // {
+  //   Social: <FaFacebookF />,
+  //   link: "https://www.facebook.com/profile.php?id=100090061861023",
+  // },
+  // {
+  //   Social: <FaFlickr />,
+  //   link: "https://flickr.com/photos/197725983@N03/albums",
+  // },
 ];
 
 const FooterTwo = () => {
@@ -45,7 +45,7 @@ const FooterTwo = () => {
                   </a>
                 </div>
               </div>
-              <button className="rn-button-style--2 btn-bul" onClick={() => dispatch(showDonation())}>Support us</button>
+              <button className="rn-button-style--2 rn-btn-reverse" onClick={() => dispatch(showDonation())}>Support us</button>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-6 col-12">
