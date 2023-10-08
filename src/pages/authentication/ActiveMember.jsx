@@ -43,6 +43,32 @@ const schema = yup.object().shape({
         const wordCount = value.trim().split(/\s+/).length;
         return wordCount <= 200;
     }),
+    q5: yup.string().required('Моля отговорете на въпроса').test('word-count', 'Надвишихте лимита от 200 думи', value => {
+        const wordCount = value.trim().split(/\s+/).length;
+        return wordCount <= 200;
+    }),
+    q6: yup.string().required('Моля отговорете на въпроса').test('word-count', 'Надвишихте лимита от 200 думи', value => {
+        const wordCount = value.trim().split(/\s+/).length;
+        return wordCount <= 200;
+    }),
+    q7: yup.string().required('Моля отговорете на въпроса').test('word-count', 'Надвишихте лимита от 200 думи', value => {
+        const wordCount = value.trim().split(/\s+/).length;
+        return wordCount <= 200;
+    }),
+    q8: yup.string().required('Моля отговорете на въпроса').test('word-count', 'Надвишихте лимита от 200 думи', value => {
+        const wordCount = value.trim().split(/\s+/).length;
+        return wordCount <= 200;
+    }),
+
+    q9: yup.string().required('Моля отговорете на въпроса').test('word-count', 'Надвишихте лимита от 200 думи', value => {
+        const wordCount = value.trim().split(/\s+/).length;
+        return wordCount <= 200;
+    }),
+    q10: yup.string().required('Моля отговорете на въпроса').test('word-count', 'Надвишихте лимита от 200 думи', value => {
+        const wordCount = value.trim().split(/\s+/).length;
+        return wordCount <= 200;
+    }),
+
 
     cv: yup.mixed().notRequired().test(
         "fileType",
@@ -91,9 +117,11 @@ const ActiveMember = (props) => {
             </div>
             {/* Start Options Area */}
             <div className="container mt--80 mb--80">
-                <p>Екипът на Българското Общество в Холандия се разраства вече и в Ротердам! През 2022 година бе основано Българкото Общество в Грьонинген. Това е единственото българско студентско общество в Холандия, но не за дълго! След една много успешна година стана време за търсим разширение на нашия отбор. Ако си ентусиазиран и постоянен, обичаш да организираме събития и споделяш мисията на Обществото, кандидатствай за свободните ни позиции като отговориш на въпросите (до 200 думи на въпрос) и, ако имаш желание, ни изпратиш CV (до 300 думи).</p>
+                <p>Екипът на Българското Общество в Холандия се разраства вече и в Ротердам! През 2022 година бе основано Българкото Общество в Грьонинген. Целта на Българското Общество на Грьонинген е да обедини българските студенти в Грьонинген, да създадем приветлива и стимулираща среда, в която българите се развиват, да запазим и развием българската култура и да представим българската култура в Грьонинген. Ако смятате че тези цели са актуални и за Ротердам, значи Българското Общество в Ротердам е за Вас!</p>
                 <br />
-                <p>Като активен член на Bulgarian Society Rotterdam, ще работиш в разрастващ и развиващ се екип в цяла Холандия. Ти ще си част от едно младо и развиващо се българско общество. Ти ще работиш в екип от борд и комитети и също така ще имаш намaления за събитията на всички български общества в Холандия, както и достъп до събития, организирани за целия екип, с цел обмяна на информация и сплотяване на екипа.  </p>
+                <p>Ако си ентусиазиран и постоянен, обичаш да организираме събития и споделяш мисията на Обществото, кандидатствай за свободните ни позиции като отговориш на въпросите (до 200 думи на въпрос) и, ако имаш желание, ни изпратиш CV (до 300 думи).</p>
+                <br />
+                <p>Като активен член на Bulgarian Society Rotterdam, ще работиш в разрастващ и развиващ се екип в цяла Холандия. Ти ще си част от едно младо и развиващо се българско общество. Ти ще работиш в екип от борд и комитети и също така ще имаш намaления за събитията на всички български общества в Холандия, както и достъп до събития, организирани за целия екип, с цел обмяна на информация и сплотяване на екипа.</p>
                 <br />
                 <p style={{ color: 'red' }}>Срокът за кандидатстване е 23/10/2023</p>
             </div>
@@ -138,6 +166,12 @@ const ActiveMember = (props) => {
                                     values.q2,
                                     values.q3,
                                     values.q4,
+                                    values.q5,
+                                    values.q6,
+                                    values.q7,
+                                    values.q8,
+                                    values.q9,
+                                    values.q10,
                                 ]
                             )
                             try {
@@ -176,6 +210,12 @@ const ActiveMember = (props) => {
                             q2: '',
                             q3: '',
                             q4: '',
+                            q5: '',
+                            q6: '',
+                            q7: '',
+                            q8: '',
+                            q9: '',
+                            q10: '',
 
                         }}
                     >
@@ -233,7 +273,7 @@ const ActiveMember = (props) => {
                                     </div>
 
                                 </div> */}
-                                <h3 className="mt--80">Контакти</h3>
+                                <p className="mt--80">Контакти</p>
                                 <div className="row ">
                                     <div className="col-lg-6 col-md-12 col-12">
                                         <Field type="email" placeholder="Email" name="email" />
@@ -256,10 +296,10 @@ const ActiveMember = (props) => {
                                         />
                                     </div>
                                 </div>
-                                <h3 className="mt--80 mb--20">Въпроси</h3>
+                                <p className="mt--80 mb--20">Моля, попълнете въпросника (200 думи на въпрос)</p>
                                 <div className="row ">
                                     <div className="col-lg-6 col-md-12 col-12 mt--40">
-                                        <h4>1. Защо искаш да станеш част от Integration Committee и от Bulgarian Society Rotterdam? </h4>
+                                        <h4>1. Защо искате да участвате в Българското Общество в Ротердам? </h4>
                                         <Field as='textarea' placeholder="Въпрос 1" name="q1" />
                                         <ErrorMessage
                                             className="error"
@@ -268,7 +308,7 @@ const ActiveMember = (props) => {
                                         />
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-12 mt--40">
-                                        <h4>2. Имаш ли опит със създаване на съдържание за социалните мрежи, canva/photoshop, или друг опит, който смяташ за полезен за тази позиция?
+                                        <h4>2. С какво бихте допринесли към Българското Общество в Ротердам?
                                         </h4>
                                         <Field
                                             as='textarea'
@@ -283,7 +323,7 @@ const ActiveMember = (props) => {
                                         />
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-12 mt--40">
-                                        <h4>3. С какво би допринесъл към комитета и към  като цяло?
+                                        <h4>3. Колко свободни часа на седмица можете да отделяте?
                                         </h4>
                                         <Field as='textarea' placeholder="Въпрос 3" name="q3" />
                                         <ErrorMessage
@@ -293,17 +333,94 @@ const ActiveMember = (props) => {
                                         />
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-12 mt--40">
-                                        <h4>4. Какви събития би искал/а да видиш в ?
+                                        <h4>4. Добър ли сте със числа?
                                         </h4>
                                         <Field
                                             as='textarea'
-
                                             placeholder="Въпрос 4"
                                             name="q4"
                                         ></Field>
                                         <ErrorMessage
                                             className="error"
                                             name="q4"
+                                            component="div"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="row ">
+                                    <div className="col-lg-6 col-md-12 col-12 mt--40">
+                                        <h4>5. Какви са вашите хобита?
+                                        </h4>
+                                        <Field as='textarea' placeholder="Въпрос 5" name="q5" />
+                                        <ErrorMessage
+                                            className="error"
+                                            name="q5"
+                                            component="div"
+                                        />
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12 mt--40">
+                                        <h4>6. Умеете ли да работите в екип?
+                                        </h4>
+                                        <Field
+                                            as='textarea'
+
+                                            placeholder="Въпрос 6"
+                                            name="q6"
+                                        ></Field>
+                                        <ErrorMessage
+                                            className="error"
+                                            name="q6"
+                                            component="div"
+                                        />
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12 mt--40">
+                                        <h4>7. Интроверт или екстроверт сте?
+                                        </h4>
+                                        <Field as='textarea' placeholder="Въпрос 7" name="q7" />
+                                        <ErrorMessage
+                                            className="error"
+                                            name="q7"
+                                            component="div"
+                                        />
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12 mt--40">
+                                        <h4>8. Определяте ли се като лидер?
+                                        </h4>
+                                        <Field
+                                            as='textarea'
+
+                                            placeholder="Въпрос 8"
+                                            name="q8"
+                                        ></Field>
+                                        <ErrorMessage
+                                            className="error"
+                                            name="q8"
+                                            component="div"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="row ">
+                                    <div className="col-lg-6 col-md-12 col-12 mt--40">
+                                        <h4>9. Имате ли опит със създаване на съдържание за социалните мрежи, canva/photoshop? </h4>
+                                        <Field as='textarea' placeholder="Въпрос 9" name="q9" />
+                                        <ErrorMessage
+                                            className="error"
+                                            name="q9"
+                                            component="div"
+                                        />
+                                    </div>
+                                    <div className="col-lg-6 col-md-12 col-12 mt--40">
+                                        <h4>10.Смятате ли се за подреден човек?
+                                        </h4>
+                                        <Field
+                                            as='textarea'
+
+                                            placeholder="Въпрос 10"
+                                            name="q10"
+                                        ></Field>
+                                        <ErrorMessage
+                                            className="error"
+                                            name="q10"
                                             component="div"
                                         />
                                     </div>
