@@ -9,65 +9,70 @@ import WindowShift from "../../elements/ui/WindowShift";
 import TeamTwo from "../../elements/TeamTwo";
 
 const COMMITTEES = {
-  SPORT: [
-    {
-      id: 1,
-      name: "Milena |",
-      title: " Chair",
-      description: '19 | BSc International Business',
-      interests: 'Extreme Sports, Reading, Marketing, Painting'
-    },
-    {
-      id: 2,
-      name: "Jordanka |",
-      title: " PR Manager",
-      description: '21 | BSc Psychology',
-      interests: 'Gym, Dancing, Personal Development'
-    },
-    {
-      id: 3,
-      name: "Emil |",
-      title: " Treasurer",
-      description: '20 | BSc International Business',
-      interests: 'Finance, Personal Development, Reading, Music, Sports'
-    },
-    {
-      id: 4,
-      name: "Gergana |",
-      title: " Secretary",
-      description: '19 | BSc International Business',
-      interests: 'Synchronized Swimming, Photography, Mathematics, Reading'
-    }
-  ],
   CULTURE: [
     {
       id: 1,
-      name: "Tsvetina |",
-      title: "Chair",
-      description: '27 | Master International Communication',
-      interests: 'Traveling, Festivals, Cooking, Cultural Activities'
+      name: "Paolina |",
+      title: " Chair",
+      description: '20 | Liberal Arts and Science, Major Economics and Political Science',
+      interests: 'Basketball, Traveling, Cooking',
+      instagram: 'https://instagram.com/paolinagocheva',
+      linkedin: 'https://www.linkedin.com/in/paolina-gocheva-6b0711245'
     },
     {
       id: 2,
-      name: "Margarita |",
-      title: "Treasurer",
-      description: '20 | BSc Biomedical engineering',
-      interests: 'Dancing, Traveling, Baking'
+      name: "Lora |",
+      title: " PR",
+      description: '20 | BSc International Communication and Media',
+      interests: 'Poetry, Fashion, Media, Journalism',
+      instagram: 'https://www.instagram.com/loratsv/',
     },
     {
       id: 3,
-      name: "Elena |",
-      title: "PR Manager",
-      description: '20 | BSc Marketing Management',
-      interests: 'Finance, Personal Development, Reading, Music, Sports'
+      name: "Gergana |",
+      title: " Secretary",
+      description: '22 | MSc Business Information Management',
+      interests: 'Dancing, Traveling',
+      instagram: 'https://www.instagram.com/geristoyancheva/',
+      linkedin: 'https://www.linkedin.com/in/gergana-s-50812a134/'
     },
     {
       id: 4,
-      name: "Maria-Kristi |",
-      title: "Secretary",
-      description: '19 | BA International and European Law',
-      interests: 'Reading, Music, Cooking'
+      name: "Denis |",
+      title: " Culture Ambassador",
+      description: '20 | BSc International Business Administration',
+      interests: 'Entrepreneurship, Motocross, Hiking, Skiing, Traveling',
+      instagram: 'https://www.instagram.com/denkata_dh/',
+      linkedin: 'https://www.linkedin.com/in/denis-dimitrov-60b120243/'
     }
+  ],
+  PR: [
+    {
+      id: 1,
+      name: "Aleksandra |",
+      title: " PR Team Representative",
+      description: '22 | MSc Marketing Management',
+      interests: 'Fashion, Traveling, Marketing',
+      instagram: 'https://www.instagram.com/alexandra.sg/',
+      linkedin: 'www.linkedin.com/in/aleksandra-garcheva-a7a9231b2'
+    },
+    {
+      id: 2,
+      name: "Viktoria |",
+      title: " Account Manager",
+      description: '20 | BSc International Economics & Business Economics',
+      interests: 'Kitesurfing, Traveling, Partying ',
+      instagram: 'https://instagram.com/victoria_alex.sgrv',
+      linkedin: 'https://www.linkedin.com/in/viktoriya-alex-sugareva-622494278'
+    },
+    {
+      id: 3,
+      name: "Lora |",
+      title: " PR of Social and Culture",
+      description: '20 | BSc International Communication and Media',
+      interests: 'Poetry, Fashion, Media, Journalism',
+      instagram: 'https://www.instagram.com/loratsv/',
+    },
   ]
 }
 
@@ -87,22 +92,22 @@ const Committees = React.memo(() => {
       {/* Start Team Area  */}
       <div className=" ptb--120 bg_color--5">
         <WindowShift
-          main="Personal development and Sports"
-          secondary="Social and Culture"
+          main="Social and Culture"
+          secondary="Press Release"
           mainContent={
             <div>
               <h2 className="center_text mb--20">
-                Personal Development and Sports
+              Social and Culture Team
               </h2>
               <br />
-              <TeamTwo folder='sport' target={COMMITTEES.SPORT} />
+              <TeamTwo folder='culture' target={COMMITTEES.CULTURE} />
             </div>
           }
           secondaryContent={
             <div>
-              <h2 className="center_text mb--20">Social and Culture</h2>
+              <h2 className="center_text mb--20">Press Release Team</h2>
               <br />
-              <TeamTwo folder='culture' target={COMMITTEES.CULTURE} />
+              <TeamTwo folder='pr' target={COMMITTEES.PR} />
             </div>
           }
         />

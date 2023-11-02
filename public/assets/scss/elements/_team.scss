@@ -353,6 +353,13 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  a {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
   @media only screen and (min-width: 1199px) {
     width: 70%;
   }
@@ -370,12 +377,14 @@ ul {
   }
 
   img {
-    border-radius: 50%;
-    width: 140px;
-    height: 140px;
+    object-fit: contain;
+    border-radius: 80%;
+    width: 160px;
+    height: 160px;
   }
+
   @media #{$sm-layout} {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 }
 

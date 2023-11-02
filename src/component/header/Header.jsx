@@ -88,9 +88,9 @@ const Header = (props) => {
                     <li>
                       <Link to="/board">Meet the Board</Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link to="/committees">Meet the Committees</Link>
-                    </li> */}
+                    </li>
                   </ul>
                 </li>
                 {/* <li className="has-droupdown">
