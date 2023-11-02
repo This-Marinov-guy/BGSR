@@ -5,128 +5,144 @@ import ImageFb from "./ui/ImageFb";
 let TeamContent = [
   {
     id: 1,
-    images: "01",
-    name: "Lazar",
+    images: "1",
+    name: "Ivan",
     title: "| President",
     designation: [
-      "Study: MSc Artificial Intelligence",
-      "Age: 26",
-      "Interests: Entrepreneurship, MMA, Literature",
+      "Study: BSc International Business Administration",
+      "Age: 19",
+      "Interests: Fitness, Cryptocurrencies, Entrepreneurship",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/vdvends/",
+        url: "https://instagram.com/ivankkol?igshid=OGQ5ZDc2ODk2ZA==",
       },
       {
         icon: <FaLinkedinIn />,
-        url: "https://www.linkedin.com/in/lazar-popov-bb4321200/",
+        url: "https://www.linkedin.com/in/ivan-kolev-06635021a",
       },
     ],
   },
   {
     id: 2,
-    images: "02",
-    name: "Radost",
-    title: "| Creative Manager",
+    images: "2",
+    name: "Hristiyan",
+    title: "| Vice President",
     designation: [
-      "Study: MA Euroculture",
-      "Age: 23",
-      "Interests: Customizing clothes, Travel, Dancing, Sustainability",
+      "Study: BSc International Business Administration",
+      "Age: 19",
+      "Interests: Travel, Entrepreneurship, Leadership, Golf, Skiing",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/radostlozanova/",
+        url: "https://www.instagram.com/hristiandanchev/",
       },
       {
         icon: <FaLinkedinIn />,
-        url: "https://www.linkedin.com/in/radost-lozanova/",
+        url: "https://www.linkedin.com/in/hristiyan-danchev/",
       },
     ],
   },
   {
     id: 3,
-    images: "03",
-    name: "Elena",
+    images: "3",
+    name: "Aleksandra",
     title: "| PR Manager",
     designation: [
-      "Study: BA Marketing Management",
-      "Age: 20",
-      "Interests: Film, Traveling, Theatre",
+      "Study: MSc Marketing Management",
+      "Age: 22",
+      "Interests: Fashion, Traveling, Marketing",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/e.matevva/",
+        url: "https://www.instagram.com/alexandra.sg/",
+      },
+      {
+        icon: <FaLinkedinIn />,
+        url: "www.linkedin.com/in/aleksandra-garcheva-a7a9231b2",
       },
     ],
   },
   {
     id: 4,
-    images: "04",
-    name: "Maria-Kristi",
+    images: "4",
+    name: "Viktoria",
     title: "| Secretary",
     designation: [
-      "Study: BA International & European Law",
+      "Study: BSc International Economics & Business Economics",
       "Age: 20",
-      "Interests: Reading, Music, Cooking",
+      "Interests: Make-up, Reading, History",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/maria.kristi.r/",
+        url: "https://instagram.com/vikki_sugareva",
+      },
+      {
+        icon: <FaLinkedinIn />,
+        url: "https://www.linkedin.com/in/viktoria-sugareva-b762b824a",
       },
     ],
   },
   {
     id: 5,
-    images: "05",
-    name: "Sava",
+    images: "5",
+    name: "Kalina",
     title: "| Internal Relations",
     designation: [
-      "Study: BA CMGT",
-      "Age: 20",
-      "Interests: Gym, Kickboxing, Gaming",
+      "Study: BSc International Communication and Media",
+      "Age: 21",
+      "Interests: Gym, Reading, Travel",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/n0t_stalking/",
+        url: "https://instagram.com/kalii_832",
       },
     ],
   },
   {
     id: 6,
-    images: "06",
-    name: "Dimitar",
+    images: "6",
+    name: "Pavel",
     title: "| External Relations",
     designation: [
-      "Study: BA International Business",
-      "Age: 22",
-      "Interests: Music, DJ-ing, Business, Jiu-Jitsu",
+      "Study: BSc International Business Administration",
+      "Age: 20",
+      "Interests: Business, Automobiles, Travel, Martial Arts, Tennis",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/dimitarstamatovv/",
+        url: "https://www.instagram.com/7_p_7_a_7/",
+      },
+      {
+        icon: <FaLinkedinIn />,
+        url: "https://www.linkedin.com/in/pavel-angelov-822041213/",
       },
     ],
   },
   {
     id: 7,
-    images: "07",
-    name: "Konstantin",
+    images: "7",
+    name: "Boris",
     title: "| Treasurer",
     designation: [
-      "Study: BA CMGT",
-      "Age: 21",
-      "Interests: Concerts, Movies, Entrepreneurship, Sports",
+      "Study: BSc International Economics & Business Economics",
+      "Age: 20",
+      "Interests: Gym, Playing cards, Hanging out",
     ],
     socialNetwork: [
       {
         icon: <FaInstagram />,
-        url: "https://www.instagram.com/konstantin_sonev/",
+        url: "https://www.instagram.com/borispetrov003/",
+      },
+      {
+        icon: <FaLinkedinIn />,
+        url: "https://www.linkedin.com/in/boris-petrov-59a720246/",
       },
     ],
   },
@@ -138,8 +154,7 @@ class Team extends Component {
       <React.Fragment>
         <div className="container team_info">
           <div className="column">
-          <h2>Expect soon...</h2>
-            {/* {TeamContent.map((value) => (
+            {TeamContent.map((value) => (
               <div
                 className={
                   value.id % 2 !== 0
@@ -150,8 +165,8 @@ class Team extends Component {
               >
                 <ImageFb
                   className="team_img"
-                  src={`/assets/images/team/team-${value.images}.webp`}
-                  fallback={`/assets/images/team/team-${value.images}.jpg`}
+                  src={`/assets/images/team/board/${value.images}.webp`}
+                  fallback={`/assets/images/team/board/${value.images}.jpg`}
                   alt="Team Images"
                 />
                 <div
@@ -181,7 +196,7 @@ class Team extends Component {
                   ))}
                 </div>
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
       </React.Fragment>
