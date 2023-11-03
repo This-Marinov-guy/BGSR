@@ -152,7 +152,7 @@ class Team extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container team_info">
+        <div className="container bg_color--1">
           <div className="column">
             {TeamContent.map((value) => (
               <div
