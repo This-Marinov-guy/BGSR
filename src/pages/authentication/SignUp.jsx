@@ -156,9 +156,6 @@ const SignUp = (props) => {
                         <li>
                           <FiCheck />Premium collection of event tickets
                         </li>
-                        <li>
-                          <FiCheck />Discounts from sponsors
-                        </li>
                       </ul>
                     </div>
                     <p style={{ fontSize: '15px' }}>{val.disclaimer}</p>
