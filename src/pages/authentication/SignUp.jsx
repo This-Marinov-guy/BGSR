@@ -71,7 +71,7 @@ const options = [
     icon: <FiUser />,
     title: "Member",
     description: "Be part of the society. With this membership you get:  ",
-    price: '10 euro/year*',
+    price: '5 euro/year*',
     disclaimer: '*The annual membership expires on 31st of August'
   },
   {
