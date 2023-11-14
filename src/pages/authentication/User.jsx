@@ -264,8 +264,9 @@ const User = () => {
                       <option value="" disabled>
                         Select your univerisity
                       </option>
-                      <option value="RUG">RUG</option>
-                      <option value="Hanze">Hanze</option>
+                      <option value="Erasmus University Rotterdam">Erasmus University Rotterdam</option>
+                      <option value="Rotterdam University of Applied Sciences">Rotterdam University of Applied Sciences</option>
+                      <option value="Codarts University of the Arts">Codarts University of the Arts</option>
                       <option value="other">Other univerisity</option>
                       <option value="working">Working</option>
                     </Field>
@@ -464,7 +465,7 @@ const User = () => {
                       </li>
                       <li className="mt--40">
                         <p>
-                          We will soon post information for our 2nd member event.
+                          We will soon post information for our 1st member event.
                           Stay tuned!
                         </p>
                       </li>

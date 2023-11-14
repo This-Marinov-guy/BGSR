@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHttpClient } from "../../hooks/http-hook";
 import Loader from "./Loader";
 import ModalWindow from "./ModalWindow";
@@ -8,6 +8,8 @@ import { showError } from "../../redux/error";
 
 const Locked = (props) => {
   const { loading, sendRequest } = useHttpClient();
+
+  const [selectedMembership, setSelectedMembership] = useState("price_1OCHpeIOw5UGbAo1Zvzcw9bK")
 
   const userId = useParams().userId;
 
@@ -23,7 +25,7 @@ const Locked = (props) => {
         "payment/checkout-no-file",
         "POST",
         JSON.stringify({
-          itemId: "price_1Nx3TVIOw5UGbAo1Rc0N4qi8",
+          itemId: selectedMembership,
           origin_url: window.location.origin,
           method: "unlock_account",
           userId,
@@ -35,7 +37,7 @@ const Locked = (props) => {
       if (responseData.url) {
         window.location.assign(responseData.url);
       }
-    } catch (err) {}
+    } catch (err) { }
   };
 
   return (
@@ -52,13 +54,27 @@ const Locked = (props) => {
             : "We have noticed some violation from your side. Unfortunately, we will need to block your account until further notice. Please contact: bulgariansociety.rtm@gmail.com"}
         </p>
         {props.case === "locked" && (
-          <button
-            disabled={loading}
-            onClick={handleUnlock}
-            className="rn-button-style--2 btn-solid mt--40"
-          >
-            {loading ? <Loader /> : <span>Proceed to paying</span>}
-          </button>
+          <div className="options-btns-div">
+            <button
+              disabled={loading}
+              onClick={() => {
+                setSelectedMembership("price_1OCHpeIOw5UGbAo1Zvzcw9bK")
+                handleUnlock()
+              }}
+              className="rn-button-style--2 btn-solid mt--40"
+            >
+              {loading ? <Loader /> : <span>1 year extension</span>}
+            </button>
+            <button
+              disabled={loading}
+              onClick={() => {
+                setSelectedMembership("price_1OCHs2IOw5UGbAo1MIrF1BFf")
+                handleUnlock()
+              }} className="rn-button-style--2 btn-solid mt--40"
+            >
+              {loading ? <Loader /> : <span>3 year extension</span>}
+            </button>
+          </div>
         )}
         <a href="/" className="rn-button-style--2 rn-btn-green mt--40">
           Back to Home

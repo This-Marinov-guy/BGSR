@@ -24,9 +24,9 @@ const Home = () => {
       category: "",
       title: "Bulgarian Society Rotterdam",
       description: "",
-      buttonText: user.token ? "Go To Profile" : "Become an Active Member",
+      buttonText: user.token ? "Go To Profile" : "Become a Member",
       style: user.token ? " rn-btn-reverse-green" : " btn-primary-color",
-      buttonLink: user.token ? `/user/${user.userId}` : "/active-member",
+      buttonLink: user.token ? `/user/${user.userId}` : "/signup",
     },
   ];
 

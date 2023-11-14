@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { format } from "date-fns";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
@@ -7,7 +7,7 @@ import Alert from "react-bootstrap/Alert";
 import { FiCheck } from "react-icons/fi";
 import PageHelmet from "../../component/common/Helmet";
 import HeaderTwo from "../../component/header/HeaderTwo";
-import { FiUserPlus } from "react-icons/fi";
+import { FiUser, FiUserPlus } from "react-icons/fi";
 import { useHttpClient } from "../../hooks/http-hook";
 import Loader from "../../elements/ui/Loader";
 import ImageInput from "../../elements/ui/ImageInput";
@@ -17,6 +17,7 @@ import { FiChevronUp } from "react-icons/fi";
 import { useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/user";
+import Locked from "../../elements/ui/Locked";
 
 const schema = yup.object().shape({
   name: yup.string().required("Name is required"),
@@ -67,15 +68,25 @@ const schema = yup.object().shape({
 
 const options = [
   {
-    icon: <FiUserPlus />,
+    icon: <FiUser />,
     title: "Member",
     description: "Be part of the society. With this membership you get:  ",
-    price: 10,
+    price: '10 euro/year*',
+    disclaimer: '*The annual membership expires on 31st of August'
+  },
+  {
+    icon: <FiUserPlus />,
+    title: "Long-Term Member",
+    description: "Be part of the society. With this membership you get:  ",
+    price: '12 euro = 3years*',
+    disclaimer: '*The membership expires on 31st of August 2026',
   },
 ];
 
 const SignUp = (props) => {
   const { loading, sendRequest } = useHttpClient();
+
+  const [selectedMembership, setSelectedMembership] = useState(null);
 
   const history = useHistory();
 
@@ -101,17 +112,21 @@ const SignUp = (props) => {
 
       <div className="service-area ptb--120 bg_color--1">
         <div className="container">
-          <div className="row service-one-wrapper center_div">
+          <div className="center_div mb--20">
+            {selectedMembership ? <p>You have selected: {selectedMembership} </p> : <p>Select one of the options by clicking it</p>}
+          </div>
+          <div className="row service-one-wrapper center_div" style={{ gap: '20px' }}>
             {options.map((val, i) => (
               <div key={i}>
                 <button
                   style={
-                    val.title === "Active Member"
-                      ? { border: "5px solid #ffd700" }
-                      : { border: "5px solid #017363" }
+                    val.title === selectedMembership
+                      ? { backgroundColor: "#017363" }
+                      : {}
                   }
                   className="service service__style--2"
                   onClick={() => {
+                    setSelectedMembership(val.title)
                     setTimeout(() => {
                       window.scrollTo({
                         top: document.getElementById("form").scrollHeight,
@@ -122,7 +137,7 @@ const SignUp = (props) => {
                 >
                   <div className="hor_section">
                     <div className="icon">{val.icon}</div>
-                    <h3 style={{ width: "40%" }}>{val.price} euro/year*</h3>
+                    <h3 style={{ width: "40%" }}>{val.price}</h3>
                   </div>
                   <div className="content">
                     <h3>{val.title}</h3>
@@ -146,14 +161,11 @@ const SignUp = (props) => {
                         </li>
                       </ul>
                     </div>
-                    <p style={{ fontSize: '15px' }}>*The annual membership expires on 31st of August</p>
+                    <p style={{ fontSize: '15px' }}>{val.disclaimer}</p>
                   </div>
                 </button>
               </div>
             ))}
-          </div>
-          <div style={{textAlign:'center', marginTop: '50px'}}>
-            <h2>Cooming soon!</h2>
           </div>
         </div>
       </div>
@@ -161,8 +173,7 @@ const SignUp = (props) => {
       {/* End Options Area */}
       {/* Start Form Area */}
 
-
-      {/* <div className="blog-comment-form pb--120 bg_color--1">
+      {selectedMembership && <div className="blog-comment-form pb--120 bg_color--1">
         <div className="container">
           <Formik
             className="inner"
@@ -182,7 +193,11 @@ const SignUp = (props) => {
               } else {
                 formData.append("image", null);
               }
-              formData.append("itemId", "price_1Nx3UzIOw5UGbAo1AEqZ0P02");
+              if (selectedMembership === 'Long-Term Member') {
+                formData.append("itemId", "price_1OCHoiIOw5UGbAo1ebHnT44G");
+              } else {
+                formData.append("itemId", "price_1OCHnJIOw5UGbAo1HjEtNQby");
+              }
               formData.append("origin_url", window.location.origin);
               formData.append("method", "signup");
               formData.append("region", 'Rotterdam');
@@ -622,12 +637,13 @@ const SignUp = (props) => {
                   </div>
                 </div>
                 <button
-                  disabled={loading}
+                  disabled={loading || !selectedMembership}
                   type="submit"
                   className="rn-button-style--2 btn-solid mt--80"
                 >
                   {loading ? <Loader /> : <span>Finish Registration</span>}
                 </button>
+                {!selectedMembership && <h5 className="mt--20">Please select on one of the options for membership</h5>}
                 <div
                   style={{ alignItems: "flex-start" }}
                   className="action_btns"
@@ -640,7 +656,7 @@ const SignUp = (props) => {
             )}
           </Formik>
         </div>
-      </div> */}
+      </div>}
       {/* End Form Area */}
       {/* Start Footer Style  */}
       <FooterTwo />

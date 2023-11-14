@@ -127,9 +127,9 @@ const Root = () => {
             <Route exact path={`/committees`} component={Committees} />
             {/* <Route exact path={`/events`} component={Events} /> */}
             {/* <Route exact path={`/articles`} component={Articles} /> */}
-            <Route exact path={`/active-member`} >
+            {/* <Route exact path={`/active-member`} >
               <ActiveMember setNotification={setNotification} />
-            </Route>
+            </Route> */}
 
             {/* <Route exact path={`/future-events`} component={FutureEvents} />
 
@@ -163,13 +163,13 @@ const Root = () => {
               </Switch>
             ) : (
               <Switch>
-                {/* <Route exact path={`/login`}>
+                <Route exact path={`/login`}>
                   <LogIn setNotification={setNotification} />
                 </Route>
 
                 <Route exact path={`/signup`}>
                   <SignUp setNotification={setNotification} />
-                </Route> */}
+                </Route>
                 {/* <Route
                   exact
                   path={"/purchase-ticket/:eventId"}
