@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaInstagram, FaFlickr, FaFacebookF } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFacebookF } from "react-icons/fa";
 import packageJson from "../../../package.json";
 import Donation from "../../elements/Donation";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,10 +10,10 @@ const SocialShare = [
     Social: <FaInstagram />,
     link: "https://www.instagram.com/bulgariansociety.rtm/",
   },
-  // {
-  //   Social: <FaFacebookF />,
-  //   link: "https://www.facebook.com/profile.php?id=100090061861023",
-  // },
+  {
+    Social: <FaLinkedin />,
+    link: "  https://www.linkedin.com/company/bulgarian-society-rotterdam",
+  },
   // {
   //   Social: <FaFlickr />,
   //   link: "https://flickr.com/photos/197725983@N03/albums",
