@@ -430,7 +430,9 @@ const User = () => {
                         <FiCircle style={{ fontSize: "14px" }} /> Membership
                         Expires: {currentUser.expireDate}
                       </li>
-                      
+                      <li>
+                        <FiCheckCircle style={{ fontSize: "14px" }} /><a style={{ color: "#017363" }} href='https://chat.whatsapp.com/GDjhKTE6tVaEbbkXw35A1M' target='_blank'>Click here to join the Member Chat</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
