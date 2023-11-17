@@ -25,7 +25,7 @@ const Locked = (props) => {
         "payment/checkout-no-file",
         "POST",
         JSON.stringify({
-          itemId: selectedMembership,
+          longTerm: (selectedMembership === "price_1OCHpeIOw5UGbAo1Zvzcw9bK") ? false : true,
           origin_url: window.location.origin,
           method: "unlock_account",
           userId,
