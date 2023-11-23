@@ -1,44 +1,42 @@
 // add ticket_link : '*link for the tickets' for outside ticket purchase
 export const OPEN_SOCIETY_EVENTS = [
-  // {
-  //   visible: true,
-  //   subEvent: {
-  //     description: 'You can purchase ONLY the dinner from this event separately - just click below!',
-  //     link: '/event-details/Introduction%20Week%20(DINNER%20ONLY)'
-  //   },
-  //   title: "Introduction Week (FULL PASS)",
-  //   description: "Welcome to the new term",
-  //   bgImage: "21",
-  //   date: "15th-19th September",
-  //   time: "Check Program",
-  //   ticketTimer: '2023-09-15T04:59:00',
-  //   ticketLimit: 60,
-  //   //Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
-  //   correctedDate: "",
-  //   correctedTime: "",
-  //   where: `Introduction Lecture - Lust |
-  //   City walk - Starting point in front of Lust |
-  //   Dinner - Wijkrestaurant De Duindoorn, Duindoornstraat 91, 9741 NP |
-  //   Party - Club Sunny Beach`,
-  //   entry: 15,
-  //   // memberEntry: 5,
-  //   including: ['', ''],
-  //   price_id: 'price_1NmbxbIOw5UGbAo1SSvjARlW',
-  //   memberPrice_id: 'price_1NmbxbIOw5UGbAo1SSvjARlW',
-  //   activeMemberPrice_id: 'price_1NmbxbIOw5UGbAo1SSvjARlW',
-  //   freePass: ["elenamateva@abv.bg", "vladislavmarinov3142@gmail.com", "z.tsenovska@gmail.com", "mnanova6@gmail.com", "tsvetina.arabadzhieva@gmail.com", 'mariakristi.radeva@gmail.com'],
-  //   extraInputs: false,
-  //   text: [
-  //     `Welcome (back😉) to Rotterdam!`,
-  //     `We are thrilled to announce our Intro week package, including four events spanning three incredible days! Let’s kick off the new academic year together!`,
-  //     '...',
-  //     `Добре дошли (отново😉) в Грьонинген!`,
-  //     `Ние сме въодушевени да обявим нашия пакет за Въведителната седмица, включващ четири събития, простиращи се през три невероятни дни! Да започнем заедно новата учебна година!`,
-  //   ],
-  //   ticket_img: '/assets/images/tickets/ticket-5.jpg',
-  //   images: ["/assets/images/events/intro-week/2", "/assets/images/events/intro-week/3"],
-  //   thumbnail: "/assets/images/portfolio/portfolio-12",
-  // },
+  {
+    visible: true,
+    // subEvent: {
+    //   description: 'You can purchase ONLY the dinner from this event separately - just click below!',
+    //   link: '/event-details/Introduction%20Week%20(DINNER%20ONLY)'
+    // },
+    title: "Bulgarian Dinner",
+    description: "Join us for our first ever Bulgarian Dinner!",
+    bgImage: "23",
+    date: "2nd December",
+    time: "20:00",
+    ticketTimer: '2023-12-02T00:59:00',
+    ticketLimit: 100,
+    //Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
+    correctedDate: "",
+    correctedTime: "",
+    where: `Stadhuisplein 30`,
+    entry: 10,
+    memberEntry: 8,
+    including: ['menu', 'menu'],
+    price_id: 'price_1OFhmnIOw5UGbAo1DRdcQMJd',
+    memberPrice_id: 'price_1OFhnTIOw5UGbAo1jD2b2Eo5',
+    activeMemberPrice_id: 'price_1OFhnTIOw5UGbAo14E6eyjfE',
+    freePass: ['vlady1002@abv.bg'],
+    extraInputs: true,
+    text: [
+      `We have prepared for you a delicious home-cooked meal, including Shopska salad, 2 main course options (Wine kebab or Stuffed peppers), a dessert (Biscuit cake), and many different surprise appetizers! 
+      `,
+      `The menu also includes vegetarian options, so that everyone can enjoy the delights that Bulgarian cuisine has to offer. Grab your friends and get ready for a night of rich flavors and warm company!
+      `,
+      'The doors will open at 20:00 at Stadhuisplein 30 (Milestone Student Apartments).',
+      `The spots are limited, so mark your calendar and buy your ticket through our website NOW: €8 for members and €10 for non-members.`,
+    ],
+    ticket_img: '/assets/images/tickets/ticket-1.jpg',
+    images: ["/assets/images/portfolio/portfolio-1"],
+    thumbnail: "/assets/images/portfolio/portfolio-1",
+  },
   // {
   //   visible: false,
   //   title: "Introduction Week (DINNER ONLY)",

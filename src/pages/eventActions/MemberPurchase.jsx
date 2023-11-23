@@ -18,7 +18,7 @@ import FormExtras from "../../elements/ui/FormExtras";
 
 const schema = yup.object().shape({
   menuType: yup.string().required("Please select a menu"),
-  drink: yup.string().required('Please select your drink'),
+  // drink: yup.string().required('Please select your drink'),
 });
 
 const MemberPurchase = () => {
@@ -120,7 +120,8 @@ const MemberPurchase = () => {
                 formData.append("eventDate", target.date);
                 formData.append("userId", userId);
                 if (target.extraInputs) {
-                  formData.append('preferences', JSON.stringify({ menuType: values.menuType, drink: values.drink }))
+                  formData.append('preferences', JSON.stringify({ menuType: values.menuType }))
+                  //, drink: values.drink
                 }
                 if (target.freePass.includes(currentUser.email) || target.freePass.includes(currentUser.name + ' ' + currentUser.surname)) {
                   const responseData = await sendRequest(
@@ -144,7 +145,7 @@ const MemberPurchase = () => {
             }}
             initialValues={{
               menuType: target.extraInputs ? "" : 'none',
-              drink: target.extraInputs ? "" : 'none',
+              // drink: target.extraInputs ? "" : 'none',
             }}>
             {() => (
               <Form id='form' encType="multipart/form-data"

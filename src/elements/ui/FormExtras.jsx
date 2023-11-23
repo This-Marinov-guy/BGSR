@@ -11,8 +11,8 @@ const FormExtras = () => {
                         <option value="" disabled>
                             Select your menu
                         </option>
-                        <option value="Classic">classic</option>
-                        <option value="Vegetarian">vegetarian</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Vegetarian">Vegetarian</option>
 
                     </Field>
                     <ErrorMessage
@@ -22,7 +22,7 @@ const FormExtras = () => {
                     />
                 </div>
             </div>
-            <div className="col-lg-12 col-md-12 col-12">
+            {/* <div className="col-lg-12 col-md-12 col-12">
                 <div className="rnform-group">
                     <Field as="select" name="drink">
                         <option value="" disabled>
@@ -39,7 +39,7 @@ const FormExtras = () => {
                         component="div"
                     />
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

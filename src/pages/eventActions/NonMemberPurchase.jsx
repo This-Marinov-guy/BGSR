@@ -20,7 +20,7 @@ const schema = yup.object().shape({
   phone: yup.string().required(),
   email: yup.string().email("Please enter a valid email").required(),
   menuType: yup.string().required("Please select a menu"),
-  drink: yup.string().required('Please select your drink'),
+  // drink: yup.string().required('Please select your drink'),
   policyTerms: yup.bool().required().oneOf([true], "Terms must be accepted"),
   payTerms: yup.bool().required().oneOf([true], "Terms must be accepted"),
 });
@@ -151,7 +151,8 @@ const NonMemberPurchase = () => {
                     formData.append("eventDate", target.date);
                     formData.append("guestEmail", values.email);
                     if (target.extraInputs) {
-                      formData.append('preferences', JSON.stringify({ menuType: values.menuType, drink: values.drink }))
+                      formData.append('preferences', JSON.stringify({ menuType: values.menuType}))
+                      //, drink: values.drink 
                     }
                     formData.append(
                       "guestName",
@@ -185,7 +186,7 @@ const NonMemberPurchase = () => {
                   email: "",
                   phone: "",
                   menuType: target.extraInputs ? "" : 'none',
-                  drink: target.extraInputs ? "" : 'none',
+                  // drink: target.extraInputs ? "" : 'none',
                   policyTerms: false,
                   payTerms: false,
                 }}
