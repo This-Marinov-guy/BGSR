@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaFlickr } from "react-icons/fa";
 import ImageFb from "../../elements/ui/ImageFb";
 import packageJson from "../../../package.json";
 import Donation from "../../elements/Donation";
@@ -15,10 +15,10 @@ const SocialShare = [
     Social: <FaLinkedin />,
     link: "  https://www.linkedin.com/company/bulgarian-society-rotterdam",
   },
-  // {
-  //   Social: <FaFlickr />,
-  //   link: "https://flickr.com/photos/197725983@N03/albums",
-  // },
+  {
+    Social: <FaFlickr />,
+    link: "https://www.flickr.com/people/199586823@N02/",
+  },
 ];
 
 const FooterTwo = () => {

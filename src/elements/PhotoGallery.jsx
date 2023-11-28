@@ -39,7 +39,7 @@ const PhotoGallery = (props) => {
         <div className="row">
           <div className="col-lg-12">
             <a
-              href="https://flickr.com/photos/197725983@N03/albums"
+              href="https://www.flickr.com/people/199586823@N02/"
               target="_blank"
               className="rn-button-style--2 btn-solid"
             >
