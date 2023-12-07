@@ -1,42 +1,42 @@
 // add ticket_link : '*link for the tickets' for outside ticket purchase
 export const OPEN_SOCIETY_EVENTS = [
-  {
-    visible: true,
-    // subEvent: {
-    //   description: 'You can purchase ONLY the dinner from this event separately - just click below!',
-    //   link: '/event-details/Introduction%20Week%20(DINNER%20ONLY)'
-    // },
-    title: "Bulgarian Dinner",
-    description: "Join us for our first ever Bulgarian Dinner!",
-    bgImage: "23",
-    date: "2nd December",
-    time: "20:00",
-    ticketTimer: '2023-12-01T00:59:00',
-    ticketLimit: 100,
-    //Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
-    correctedDate: "",
-    correctedTime: "",
-    where: `Stadhuisplein 30`,
-    entry: 10,
-    memberEntry: 8,
-    including: ['menu', 'menu'],
-    price_id: 'price_1OFhmnIOw5UGbAo1DRdcQMJd',
-    memberPrice_id: 'price_1OFhnTIOw5UGbAo1jD2b2Eo5',
-    activeMemberPrice_id: 'price_1OFhnTIOw5UGbAo14E6eyjfE',
-    freePass: ['vlady1002@abv.bg'],
-    extraInputs: true,
-    text: [
-      `We have prepared for you a delicious home-cooked meal, including Shopska salad, 2 main course options (Wine kebab or Stuffed peppers), a dessert (Biscuit cake), and many different surprise appetizers! 
-      `,
-      `The menu also includes vegetarian options, so that everyone can enjoy the delights that Bulgarian cuisine has to offer. Grab your friends and get ready for a night of rich flavors and warm company!
-      `,
-      'The doors will open at 20:00 at Stadhuisplein 30 (Milestone Student Apartments).',
-      `The spots are limited, so mark your calendar and buy your ticket through our website NOW: €8 for members and €10 for non-members.`,
-    ],
-    ticket_img: '/assets/images/tickets/ticket-1.jpg',
-    images: ["/assets/images/portfolio/portfolio-1"],
-    thumbnail: "/assets/images/portfolio/portfolio-1",
-  },
+  // {
+  //   visible: true,
+  //   // subEvent: {
+  //   //   description: 'You can purchase ONLY the dinner from this event separately - just click below!',
+  //   //   link: '/event-details/Introduction%20Week%20(DINNER%20ONLY)'
+  //   // },
+  //   title: "Bulgarian Dinner",
+  //   description: "Join us for our first ever Bulgarian Dinner!",
+  //   bgImage: "23",
+  //   date: "2nd December",
+  //   time: "20:00",
+  //   ticketTimer: '2023-12-01T00:59:00',
+  //   ticketLimit: 100,
+  //   //Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
+  //   correctedDate: "",
+  //   correctedTime: "",
+  //   where: `Stadhuisplein 30`,
+  //   entry: 10,
+  //   memberEntry: 8,
+  //   including: ['menu', 'menu'],
+  //   price_id: 'price_1OFhmnIOw5UGbAo1DRdcQMJd',
+  //   memberPrice_id: 'price_1OFhnTIOw5UGbAo1jD2b2Eo5',
+  //   activeMemberPrice_id: 'price_1OFhnTIOw5UGbAo14E6eyjfE',
+  //   freePass: ['vlady1002@abv.bg'],
+  //   extraInputs: true,
+  //   text: [
+  //     `We have prepared for you a delicious home-cooked meal, including Shopska salad, 2 main course options (Wine kebab or Stuffed peppers), a dessert (Biscuit cake), and many different surprise appetizers! 
+  //     `,
+  //     `The menu also includes vegetarian options, so that everyone can enjoy the delights that Bulgarian cuisine has to offer. Grab your friends and get ready for a night of rich flavors and warm company!
+  //     `,
+  //     'The doors will open at 20:00 at Stadhuisplein 30 (Milestone Student Apartments).',
+  //     `The spots are limited, so mark your calendar and buy your ticket through our website NOW: €8 for members and €10 for non-members.`,
+  //   ],
+  //   ticket_img: '/assets/images/tickets/ticket-1.jpg',
+  //   images: ["/assets/images/portfolio/portfolio-1"],
+  //   thumbnail: "/assets/images/portfolio/portfolio-1",
+  // },
   // {
   //   visible: false,
   //   title: "Introduction Week (DINNER ONLY)",
