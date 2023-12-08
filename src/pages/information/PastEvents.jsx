@@ -12,34 +12,6 @@ import { Link } from "react-router-dom";
 
 const list = [
   {
-    url: "Dodgeball",
-    image: "11",
-  },
-  {
-    url: "Board Game Night",
-    image: "8",
-  },
-  {
-    url: "The Entrepreneur Series II",
-    image: "5",
-  },
-  {
-    url: "Easter Lunch",
-    image: "6",
-  },
-  {
-    url: "The Entrepreneur Series I",
-    image: "4",
-  },
-  {
-    url: "Freedom Fest",
-    image: "3",
-  },
-  {
-    url: "Trifon Zarezan",
-    image: "2",
-  },
-  {
     url: "Bulgarian Dinner",
     image: "1",
   },

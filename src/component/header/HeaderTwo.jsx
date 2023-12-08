@@ -92,7 +92,7 @@ const HeaderTwo = () => {
                     </li>
                   </ul>
                 </li>
-                {/* <li className="has-droupdown">
+                <li className="has-droupdown">
                   <Link to="/events">Events</Link>
                   <ul className="submenu">
                     <li>
@@ -103,7 +103,7 @@ const HeaderTwo = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="has-droupdown">
+                {/* <li className="has-droupdown">
                   <Link to="/contest/register">Society</Link>
                   <ul className="submenu">
                     <li>

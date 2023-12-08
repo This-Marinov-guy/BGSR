@@ -125,7 +125,7 @@ const Root = () => {
               <ContestRegister setNotification={setNotification} />
             </Route> */}
             <Route exact path={`/committees`} component={Committees} />
-            {/* <Route exact path={`/events`} component={Events} /> */}
+            <Route exact path={`/events`} component={Events} />
             {/* <Route exact path={`/articles`} component={Articles} /> */}
             {/* <Route exact path={`/active-member`} >
               <ActiveMember setNotification={setNotification} />
@@ -133,16 +133,16 @@ const Root = () => {
 
             <Route exact path={`/future-events`} component={FutureEvents} />
 
-            {/* <Route exact path={`/past-events`} component={PastEvents} /> */}
+            <Route exact path={`/past-events`} component={PastEvents} />
             <Route path={`/event-details/:eventId`} component={EventDetails} />
 
-            {/* <Route exact path={"/other-event-details/:eventId"}>
+             <Route exact path={"/other-event-details/:eventId"}>
               <NonSocietyEvent setNotification={setNotification} />
             </Route>
             <Route
               path={`/event-reflection/:eventId`}
               component={EventReflection}
-            /> */}
+            /> 
 
             {/* Redirect pages */}
 
