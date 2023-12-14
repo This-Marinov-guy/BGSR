@@ -21,6 +21,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import WindowShift from "../../elements/ui/WindowShift";
 import ImageFb from "../../elements/ui/ImageFb";
 import Greeting from "../../elements/Greeting";
+import Christmas from "../../elements/special/Christmas";
+
 
 const schema = yup.object().shape({
   image: yup.string(),
@@ -100,6 +102,7 @@ const User = () => {
         colorblack="color--black"
         logoname="logo.png"
       />
+      <Christmas currentUser={currentUser} />
       {currentUser.status !== "active" && (
         <Locked case="locked" show={currentUser.status} />
       )}
