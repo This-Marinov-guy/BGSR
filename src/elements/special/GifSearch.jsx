@@ -42,7 +42,7 @@ const GifSearch = (props) => {
         <div className="col-lg-12 col-md-12 col-12">
             <div className="rnform-group">
                 <input type="text" value={keyword}
-                    placeholder={selectedGifUrl || "Search GIFs to add"} onChange={(event) => { searchGif(event.target.value), setKeyword(event.target.value) }} />
+                    placeholder={selectedGifUrl || "Search GIFs to add"} onChange={(event) => { searchGif(event.target.value); setKeyword(event.target.value) }} />
                 {(keyword && !loading && renderedGifs) && <div className='gif-container'>
                     {
                         renderedGifs.map((gif, index) => (
