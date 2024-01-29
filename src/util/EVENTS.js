@@ -59,7 +59,7 @@ export const OPEN_SOCIETY_EVENTS = [
     entry: 6,
     memberEntry: 6,
     externalPayment: true,
-    including: ['or 10 eu if in a team', 'or 10 eu if in a team'],
+    including: ['or 10 euro for teams', 'or 10 euro for teams'],
     price_id: 'price_1OVyivIOw5UGbAo1Yuob9lhb',
     memberPrice_id: 'price_1OVyivIOw5UGbAo1Yuob9lhb',
     activeMemberPrice_id: 'price_1OWBaCIOw5UGbAo1fi6OwKrL',

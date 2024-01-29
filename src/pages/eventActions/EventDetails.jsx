@@ -12,6 +12,7 @@ import ImageFb from "../../elements/ui/ImageFb";
 import Countdown from "../../elements/ui/Countdown";
 import { useHttpClient } from "../../hooks/http-hook";
 import Loader from "../../elements/ui/Loader";
+import LinkReplacer from "../../elements/ui/LinkReplacer";
 
 const EventDetails = () => {
   const [eventClosed, setEventClosed] = useState(false)
@@ -82,7 +83,7 @@ const EventDetails = () => {
                   <h2>About</h2>
                   <p className="subtitle">{target.title}</p>
                   {target.text.map((value, index) => {
-                    return <p key={index}>{value}</p>
+                    return <LinkReplacer key={index} text={value}/>
                   })}
 
                   <div className="portfolio-view-list d-flex flex-wrap">
