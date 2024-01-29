@@ -71,14 +71,14 @@ const options = [
     icon: <FiUser />,
     title: "Member",
     description: "Be part of the society. With this membership you get:  ",
-    price: '5 euro/year*',
+    price: '4 euro/year*',
     disclaimer: '*The annual membership expires on 31st of August'
   },
   {
     icon: <FiUserPlus />,
     title: "Long-Term Member",
     description: "Be part of the society. With this membership you get:  ",
-    price: '12 euro = 3years*',
+    price: '10 euro = 3years*',
     disclaimer: '*The membership expires on 31st of August 2026',
   },
 ];
