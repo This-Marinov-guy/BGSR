@@ -191,10 +191,10 @@ const SignUp = (props) => {
                 formData.append("image", null);
               }
               if (selectedMembership === 'Long-Term Member') {
-                formData.append("itemId", "price_1OCHoiIOw5UGbAo1ebHnT44G");
+                formData.append("itemId", "price_1OdzVCIOw5UGbAo1AUlL7CZ1");
                 formData.append("longTerm", 'true')
               } else {
-                formData.append("itemId", "price_1OCHnJIOw5UGbAo1HjEtNQby");
+                formData.append("itemId", "price_1OdafpIOw5UGbAo1Y4HuTkNV");
                 formData.append("longTerm", 'false')
               }
               formData.append("origin_url", window.location.origin);

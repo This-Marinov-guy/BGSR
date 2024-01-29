@@ -1,77 +1,86 @@
 // add ticket_link : '*link for the tickets' for outside ticket purchase
 export const OPEN_SOCIETY_EVENTS = [
-  // {
-  //   visible: true,
-  //   // subEvent: {
-  //   //   description: 'You can purchase ONLY the dinner from this event separately - just click below!',
-  //   //   link: '/event-details/Introduction%20Week%20(DINNER%20ONLY)'
-  //   // },
-  //   title: "Bulgarian Dinner",
-  //   description: "Join us for our first ever Bulgarian Dinner!",
-  //   bgImage: "23",
-  //   date: "2nd December",
-  //   time: "20:00",
-  //   ticketTimer: '2023-12-01T00:59:00',
-  //   ticketLimit: 100,
-  //   //Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
-  //   correctedDate: "",
-  //   correctedTime: "",
-  //   where: `Stadhuisplein 30`,
-  //   entry: 10,
-  //   memberEntry: 8,
-  //   including: ['menu', 'menu'],
-  //   price_id: 'price_1OFhmnIOw5UGbAo1DRdcQMJd',
-  //   memberPrice_id: 'price_1OFhnTIOw5UGbAo1jD2b2Eo5',
-  //   activeMemberPrice_id: 'price_1OFhnTIOw5UGbAo14E6eyjfE',
-  //   freePass: ['vlady1002@abv.bg'],
-  //   extraInputs: true,
-  //   text: [
-  //     `We have prepared for you a delicious home-cooked meal, including Shopska salad, 2 main course options (Wine kebab or Stuffed peppers), a dessert (Biscuit cake), and many different surprise appetizers! 
-  //     `,
-  //     `The menu also includes vegetarian options, so that everyone can enjoy the delights that Bulgarian cuisine has to offer. Grab your friends and get ready for a night of rich flavors and warm company!
-  //     `,
-  //     'The doors will open at 20:00 at Stadhuisplein 30 (Milestone Student Apartments).',
-  //     `The spots are limited, so mark your calendar and buy your ticket through our website NOW: €8 for members and €10 for non-members.`,
-  //   ],
-  //   ticket_img: '/assets/images/tickets/ticket-1.jpg',
-  //   images: ["/assets/images/portfolio/portfolio-1"],
-  //   thumbnail: "/assets/images/portfolio/portfolio-1",
-  // },
-  // {
-  //   visible: false,
-  //   title: "Introduction Week (DINNER ONLY)",
-  //   newTitle: 'Bulgarian Dinner',
-  //   description: "Welcome to the new term",
-  //   bgImage: "22",
-  //   date: "16th September",
-  //   time: "19:00",
-  //   ticketTimer: '2023-09-16T04:59:00',
-  //   ticketLimit: 70,
-  //   //Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
-  //   correctedDate: "",
-  //   correctedTime: "",
-  //   where: `Wijkrestaurant De Duindoorn | Duindoornstraat 91, 9741 NP`,
-  //   entry: 12,
-  //   memberEntry: 10,
-  //   including: ['(discounted including menu)', '(including menu)'],
-  //   price_id: 'price_1Nmc1rIOw5UGbAo15v1W2Lt8',
-  //   memberPrice_id: 'price_1Nmc00IOw5UGbAo1ZfaT6m4X',
-  //   activeMemberPrice_id: 'price_1Nmc00IOw5UGbAo1AqDIkHKa',
-  //   freePass: ["elenamateva@abv.bg", "vladislavmarinov3142@gmail.com", "z.tsenovska@gmail.com", "mnanova6@gmail.com", "tsvetina.arabadzhieva@gmail.com", 'mariakristi.radeva@gmail.com'],
-  //   extraInputs: false,
-  //   text: [
-  //     `Calling all the veterans!`,
-  //     `At the dinner, you will have the opportunity to meet the new additions to the town and catch up with the old ones after the summer!`,
-  //     `In addition, you can enjoy our delicious Bulgarian cuisine!`,
-  //     '...',
-  //     `До всички ветерани!`,
-  //     `На вечерята ще можете да се запознаете с новите попълнения в града и да наваксате след лятото със старите!`,
-  //     `Освен това, може да се насладите на вкусната ни българска кухня!`,
-  //   ],
-  //   ticket_img: '/assets/images/tickets/ticket-6.jpg',
-  //   images: ["/assets/images/events/intro-week/3"],
-  //   thumbnail: "/assets/images/portfolio/portfolio-13",
-  // },
+   {
+    visible: true,
+    subEvent: {
+      description: 'If you buy this ticket you can enter our Belot Tournament with a prize',
+      link: '/event-details/Belot Tournament'
+    },
+    title: "Game Night",
+    description: "🌟 Kickstart the new year with a bang! 🌟 ",
+    bgImage: "3",
+    date: "7th February",
+    time: "20:00",
+    ticketTimer: '2024-02-07T01:59:00',
+    ticketLimit: 50,
+    // Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
+    correctedDate: "",
+    correctedTime: "",
+    where: `Stadhuisplein 30, 3012 AS Rotterdam`,
+    entry: 4,
+    memberEntry: 0,
+    including: ['', 'free'],
+    price_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
+    memberPrice_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
+    activeMemberPrice_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
+    discountPass: [
+      
+    ],
+    freePass: ["vlady1002@abv.bg"],
+    text: [
+      `Get ready for an epic evening of friendly competition and gaming at our upcoming Game Night and Belot Tournament event! Whether you're a belot strategist, FIFA pro, or a table tennis enthusiast, there's something for everyone. We're not just playing for glory—there are cash prizes for the top belot champions! The date is February 7th, and the location is Stadhuisplein 30, 3012 AS Rotterdam. Doors open at 20:00, and the belot tournament kicks off at 20:30.  
+      `,
+      `Admission is FREE for BGSR members, so seize the opportunity to join our community! Non-members can get in on the action for just 4 euros, and if you're up for the belot challenge, a separate ticket is available with all proceeds going to the prize fund.
+      `,
+      `Don't miss out on the fun—secure your spot now for a night you won't forget!`,
+     
+    ],
+    ticket_img: '/assets/images/tickets/ticket-2.jpg',
+    images: ["/assets/images/portfolio/portfolio-2"],
+    thumbnail: "/assets/images/portfolio/portfolio-2",
+  },
+  {
+    visible: true,
+    subEvent: {
+      description: 'You need to first purchase ticket for the Game Night to enter the tournament',
+      link: '/event-details/Game Night'
+    },
+    title: "Belot Tournament",
+    description: "For the competitive ones",
+    bgImage: "23",
+    date: "7th February",
+    time: "20:00",
+    ticketTimer: '2024-02-07T01:59:00',
+    ticketLimit: 50,
+    // Use the corrected date and time for changes in the date or time. Do not change the initial ones as it will make a new event in the DB
+    correctedDate: "",
+    correctedTime: "",
+    where: `Stadhuisplein 30, 3012 AS Rotterdam`,
+    entry: 6,
+    memberEntry: 6,
+    externalPayment: true,
+    including: ['or 10 eu if in a team', 'or 10 eu if in a team'],
+    price_id: 'price_1OVyivIOw5UGbAo1Yuob9lhb',
+    memberPrice_id: 'price_1OVyivIOw5UGbAo1Yuob9lhb',
+    activeMemberPrice_id: 'price_1OWBaCIOw5UGbAo1fi6OwKrL',
+    discountPass: [
+     
+    ],
+    freePass: ["vlady1002@abv.bg"],
+    extraInputs: true,
+    text: [
+      `You need to first buy a ticket for the game night (link can be found below). Admission is free for BGSR members, so seize the opportunity to join our community! Non-members can get in on the action for just 4 euros, and i  
+      `,
+      `Up for the belot challenge, a this ticket is available with all proceeds going to the prize fund. Flying solo? Sign up for 6 euros, and we'll pair you with a teammate. Prefer to sign up as a team of two? Grab a collective ticket for 10 euros.
+      `,
+      `WARNING!!! Tickets need to be paid prior to the event - please check the links below so you do not have to pay them on the spot!`,
+      'Link for a single entry: https://bunq.me/o/t3VIJ9kU5XNHVkqytaazx',
+      'Link for a team entry (only one has to pay for it): https://bunq.me/o/1YfReBEjMIWnR0RG3x6diU',
+    ],
+    ticket_img: '/assets/images/tickets/ticket-3.jpg',
+    images: ["/assets/images/portfolio/portfolio-3"],
+    thumbnail: "/assets/images/portfolio/portfolio-3",
+  },
 ];
 
 export const OPEN_NON_SOCIETY_EVENTS = [

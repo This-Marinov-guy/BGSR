@@ -175,6 +175,7 @@ module.exports = function (webpackEnv) {
           path.resolve(info.absoluteResourcePath).replace(/\\/g, "/")),
     },
     optimization: {
+      portableRecords: true,
       minimize: isEnvProduction,
       minimizer: [
         // This is only used in production mode

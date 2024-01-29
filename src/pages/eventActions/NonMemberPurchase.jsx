@@ -16,17 +16,6 @@ import { createCustomerTicket } from "../../util/ticket-creator"
 import FormExtras from "../../elements/ui/FormExtras";
 import { useHistory } from "react-router-dom";
 
-const schema = yup.object().shape({
-  name: yup.string().required(),
-  surname: yup.string().required(),
-  phone: yup.string().required(),
-  email: yup.string().email("Please enter a valid email").required(),
-  menuType: yup.string().required("Please select a menu"),
-  drink: yup.string().required('Please select your drink'),
-  policyTerms: yup.bool().required().oneOf([true], "Terms must be accepted"),
-  payTerms: yup.bool().required().oneOf([true], "Terms must be accepted"),
-});
-
 
 const NonMemberPurchase = () => {
   const { loading, sendRequest } = useHttpClient();
@@ -36,6 +25,18 @@ const NonMemberPurchase = () => {
   const [eventClosed, setEventClosed] = useState(false)
 
   const target = useObjectGrabUrl(OPEN_SOCIETY_EVENTS);
+
+  const schema = yup.object().shape({
+    name: yup.string().required(),
+    surname: yup.string().required(),
+    phone: yup.string().required(),
+    email: yup.string().email("Please enter a valid email").required(),
+    teamType: target.extraInputs ? yup.string().required("Are you playing single or with a teammate") : yup.string(),
+    teammate: target.extraInputs ? yup.string() : yup.string(),
+    policyTerms: yup.bool().required().oneOf([true], "Terms must be accepted"),
+    payTerms: yup.bool().required().oneOf([true], "Terms must be accepted"),
+  });
+
   const history = useHistory()
 
   function calculateTimeRemaining(timer) {
@@ -80,19 +81,19 @@ const NonMemberPurchase = () => {
   } else if (eventClosed) {
     return (
       <div className="container center_text mt--100">
-      <ImageFb
-        className="logo mb--40"
-        src="/assets/images/logo/logo.webp"
-        fallback="/assets/images/logo/logo.jpg"
-        alt="Logo"
-      />
-      <h3 className="">Opps ... it is all SOLD OUT! Please check the event description for tickets on-the-door or contact us through our email! Hope we see you soon!</h3>
-      <a href='/'
-        className="rn-button-style--2 btn-solid mt--20"
-      >
-        Home
-      </a>
-    </div>)
+        <ImageFb
+          className="logo mb--40"
+          src="/assets/images/logo/logo.webp"
+          fallback="/assets/images/logo/logo.jpg"
+          alt="Logo"
+        />
+        <h3 className="">Opps ... it is all SOLD OUT! Please check the event description for tickets on-the-door or contact us through our email! Hope we see you soon!</h3>
+        <a href='/'
+          className="rn-button-style--2 btn-solid mt--20"
+        >
+          Home
+        </a>
+      </div>)
   } else {
     return (
       <Fragment>
@@ -179,14 +180,14 @@ const NonMemberPurchase = () => {
                       formData.append("eventDate", target.date);
                       formData.append("guestEmail", values.email);
                       if (target.extraInputs) {
-                        formData.append('preferences', JSON.stringify({ menuType: values.menuType, drink: values.drink }))
+                        formData.append('preferences', JSON.stringify({ teamType: values.teamType, teammate: values.teammate }))
                       }
                       formData.append(
                         "guestName",
                         values.name + " " + values.surname
                       );
                       formData.append("guestPhone", values.phone);
-                      if (target.freePass.includes(values.email) || target.freePass.includes(values.name + ' ' + values.surname)) {
+                      if (target.externalPayment || target.freePass.includes(values.email) || target.freePass.includes(values.name + ' ' + values.surname)) {
                         const responseData = await sendRequest(
                           "event/purchase-ticket/guest",
                           "POST",
@@ -212,8 +213,8 @@ const NonMemberPurchase = () => {
                     surname: "",
                     email: "",
                     phone: "",
-                    menuType: target.extraInputs ? "" : 'none',
-                    drink: target.extraInputs ? "" : 'none',
+                    teamType: '',
+                    teammate: '',
                     policyTerms: false,
                     payTerms: false,
                   }}
