@@ -19,7 +19,7 @@ export const OPEN_SOCIETY_EVENTS = [
     where: `Stadhuisplein 30, 3012 AS Rotterdam`,
     entry: 4,
     memberEntry: 0,
-    including: ['', 'free'],
+    including: ['', `it's free``],
     price_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
     memberPrice_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
     activeMemberPrice_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
