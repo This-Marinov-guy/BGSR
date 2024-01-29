@@ -7,13 +7,14 @@ const LinkReplacer  = ({ text }) => {
     // Replace links in the text with <a> tags
     const jsxElement = (
       <p>
-        {text.replace(linkRegex, (match, link) => (
-          <span key={link}>
-            {text.indexOf(match) > 0 ? ' ' : ''}
-            <a href={link} target="_blank" rel="noopener noreferrer">
+        {text.split(linkRegex).map((part, index) => (
+          linkRegex.test(part) ? (
+            <a key={index} href={part} target="_blank" rel="noopener noreferrer">
               Click me
             </a>
-          </span>
+          ) : (
+            <span key={index}>{part}</span>
+          )
         ))}
       </p>
     );
