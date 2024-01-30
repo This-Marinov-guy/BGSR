@@ -19,7 +19,7 @@ export const OPEN_SOCIETY_EVENTS = [
     where: `Stadhuisplein 30, 3012 AS Rotterdam`,
     entry: 4,
     memberEntry: 0,
-    including: ['', `it's free`],
+    including: [`it's free`,''],
     price_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
     memberPrice_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
     activeMemberPrice_id: 'price_1OdzZMIOw5UGbAo1kWPHqAJP',
@@ -59,7 +59,7 @@ export const OPEN_SOCIETY_EVENTS = [
     entry: 6,
     memberEntry: 6,
     externalPayment: true,
-    including: ['or 10 euro for teams', 'or 10 euro for teams'],
+    including: ['single/10 euro for teams', '/10 euro for teams'],
     price_id: 'price_1OVyivIOw5UGbAo1Yuob9lhb',
     memberPrice_id: 'price_1OVyivIOw5UGbAo1Yuob9lhb',
     activeMemberPrice_id: 'price_1OWBaCIOw5UGbAo1fi6OwKrL',
@@ -69,9 +69,9 @@ export const OPEN_SOCIETY_EVENTS = [
     freePass: ["vlady1002@abv.bg"],
     extraInputs: true,
     text: [
-      `You need to first buy a ticket for the game night (link can be found below). Admission is free for BGSR members, so seize the opportunity to join our community! Non-members can get in on the action for just 4 euros, and i  
+      `You need to first buy a ticket for the game night (link can be found below). Admission is free for BGSR members, so seize the opportunity to join our community! Non-members can get in on the action for just 4 euros.
       `,
-      `Up for the belot challenge, a this ticket is available with all proceeds going to the prize fund. Flying solo? Sign up for 6 euros, and we'll pair you with a teammate. Prefer to sign up as a team of two? Grab a collective ticket for 10 euros.
+      `Up for the belot challenge, a ticket is available with all proceeds going to the prize fund. Flying solo? Sign up for 6 euros, and we'll pair you with a teammate. Prefer to sign up as a team of two? Grab a collective ticket for 10 euros.
       `,
       `WARNING!!! Tickets need to be paid prior to the event - please check the links below so you do not have to pay them on the spot!`,
       'Link for a single entry: https://bunq.me/o/t3VIJ9kU5XNHVkqytaazx',
