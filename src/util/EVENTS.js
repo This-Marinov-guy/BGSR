@@ -71,7 +71,7 @@ export const OPEN_SOCIETY_EVENTS = [
     text: [
       `You need to first buy a ticket for the game night (link can be found below). Admission is free for BGSR members, so seize the opportunity to join our community! Non-members can get in on the action for just 4 euros.
       `,
-      `Up for the belot challenge, a ticket is available with all proceeds going to the prize fund. Flying solo? Sign up for 6 euros, and we'll pair you with a teammate. Prefer to sign up as a team of two? Grab a collective ticket for 10 euros.
+      `Up for the belot challenge, a ticket is available with all proceeds going to the prize fund. Flying solo? Sign up for 6 euros, and we'll pair you with a teammate. Prefer to sign up as a team of two? Grab a collective ticket for 10 euros (one ticket - two participants).
       `,
       `WARNING!!! Tickets need to be paid prior to the event - please check the links below so you do not have to pay them on the spot!`,
       'Link for a single entry: https://bunq.me/o/t3VIJ9kU5XNHVkqytaazx',
